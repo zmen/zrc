@@ -39,5 +39,16 @@ if has('gui_running')
   set guifont=Anonymous\ Pro:h16,Monaco:h16
 endif
 
+" Vundle
+" run :PluginInstall to install plugins
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'vim-airline/vim-airline'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'pangloss/vim-javascript'
+call vundle#end()
+filetype plugin indent on
 
 
