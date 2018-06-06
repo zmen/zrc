@@ -26,20 +26,20 @@ nmap <c-h> <c-w>h
 nmap <c-l> <c-w>l
 " <leader> keymaps
 let mapleader="\<space>"
-"VIMRC edit & reload
+" vimrc edit & reload
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-" GUI SETTING
+" GENERAL GUI SETTING
 if has('gui_running')
   set guioptions-=T
   set guioptions-=m
   set guioptions-=r
   set guioptions-=L
-  set guifont=Anonymous\ Pro:h16,Monaco:h16
+  set guifont=Courier:h20,Monaco:h16
 endif
 
-" Vundle
+" VUNDLE
 " run :PluginInstall to install plugins
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -48,7 +48,23 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'pangloss/vim-javascript'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'posva/vim-vue'
+Plugin 'tpope/vim-fugitive'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'JamshedVesuna/vim-markdown-preview'
+Plugin 'ayu-theme/ayu-vim'
 call vundle#end()
 filetype plugin indent on
 
+" plugin gui setting
+if has('gui_running')
+    colorscheme ayu
+    set termguicolors
+    let ayucolor="dark"
+    colorscheme ayu
+endif
 
