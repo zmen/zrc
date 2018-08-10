@@ -36,7 +36,8 @@ if has('gui_running')
   set guioptions-=m
   set guioptions-=r
   set guioptions-=L
-  set guifont=Courier:h20,Monaco:h16
+  set guifont=Courier:h16
+  set guifontwide=隶变-简\ 常规体
 endif
 
 " VUNDLE
@@ -57,8 +58,13 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'ayu-theme/ayu-vim'
+Plugin 'kien/ctrlp.vim'
 call vundle#end()
 filetype plugin indent on
+
+"CtrlP
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " plugin gui setting
 if has('gui_running')
