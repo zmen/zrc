@@ -36,8 +36,7 @@ if has('gui_running')
   set guioptions-=m
   set guioptions-=r
   set guioptions-=L
-  set guifont=Courier:h16
-  set guifontwide=隶变-简\ 常规体
+  set guifont=Ubuntu\ Mono:h16
 endif
 
 " VUNDLE
@@ -53,18 +52,26 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'posva/vim-vue'
+Plugin 'digitaltoad/vim-pug'
 Plugin 'tpope/vim-fugitive'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'ayu-theme/ayu-vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'stephpy/vim-yaml'
+Plugin 'jceb/vim-orgmode'
+Plugin 'tpope/vim-speeddating'
 call vundle#end()
 filetype plugin indent on
 
 "CtrlP
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+"vim vue
+"see https://github.com/posva/vim-vue
+autocmd FileType vue syntax sync fromstart
 
 " plugin gui setting
 if has('gui_running')
