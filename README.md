@@ -18,5 +18,25 @@ vim
 
 ## Feature
 
-to be continue...
+- **keybinding** `C-j`,`C-k`,`C-h`,`C-l` for switching between windows
+- **keybinding** `jk` has been bind to `Esc`
+- **keybinding** take `space` as leader key
+- **keybinding** `<leader>ev` to edit vimrc
+- **keybinding** `<leader>sv` to reload vimrc
+- **plugin:vim-airline**
+- **plugin:nerdtree** folder tree
+- **plugin:emmet-vim** `Ctrl``y``,` to autocomplete
+- **plugin:vim-fugitive**
+- **plugin:tabular**
+- **plugin:vim-markdown-preview**
+- **plugin:ctrlp**
+- **plugin:speeddating**
+- **plugin:JsDoc**
 
+## File Type Support
+
+- javascript by **vim-javascript**, **javascript-libraries-syntax**
+- vue by **vim-vue**
+- markdown by **vim-markdown**
+- yaml by **vim-yaml**
+- orgmode by **vim-orgmode**

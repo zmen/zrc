@@ -14,8 +14,8 @@ color dracula
 " EDIT
 set number
 set expandtab
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 " KEYMAPS
 inoremap jk <Esc>
@@ -62,12 +62,20 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'stephpy/vim-yaml'
 Plugin 'jceb/vim-orgmode'
 Plugin 'tpope/vim-speeddating'
+Plugin 'heavenshell/vim-jsdoc'
 call vundle#end()
 filetype plugin indent on
 
 "CtrlP
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+"JsDoc
+let g:jsdoc_allow_input_prompt = 1
+let g:jsdoc_input_description = 1
+let g:jsdoc_return_description = 1
+let g:jsdoc_underscore_private = 1
+let g:jsdoc_tyep_hook = 1
+let g:jsdoc_enable_es6 = 1
 
 "vim vue
 "see https://github.com/posva/vim-vue
