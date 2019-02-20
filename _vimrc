@@ -9,7 +9,6 @@ set noswapfile
 
 " APPEARANCE
 syntax on
-color dracula
 
 " EDIT
 set number
@@ -44,7 +43,13 @@ endif
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+" To install youcompleteme, you may need to execute
+" '~/.vim/bundle/youcompleteme/install.py'
+" And downloading this package may takes quite a long time, be patient :)
+Plugin 'valloric/youcompleteme'
+Plugin 'morhetz/gruvbox'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'pangloss/vim-javascript'
@@ -81,11 +86,13 @@ let g:jsdoc_enable_es6 = 1
 "see https://github.com/posva/vim-vue
 autocmd FileType vue syntax sync fromstart
 
-" plugin gui setting
+" More plugin gui setting
 if has('gui_running')
-    colorscheme ayu
     set termguicolors
-    let ayucolor="dark"
-    colorscheme ayu
+    colorscheme one
+    set background=light
+    let g:airline_theme='light'
+else
+    colorscheme gruvbox
 endif
 
