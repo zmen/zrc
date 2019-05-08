@@ -11,7 +11,7 @@ My personal configuration for vim. Should work on OSX.
 cd ~/.vim
 git clone https://github.com/zmen/zrc.git .
 ln -s ~/.vim/_vimrc ~/.vimrc
-git submodule update // pull Vundle.vim
+git submodule init && git submodule update // pull Vundle.vim
 vim
 :PluginInstall
 ```
