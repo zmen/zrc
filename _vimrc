@@ -43,10 +43,6 @@ endif
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" To install youcompleteme, you may need to execute
-" '~/.vim/bundle/youcompleteme/install.py'
-" And downloading this package may takes quite a long time, be patient :)
-Plugin 'valloric/youcompleteme'
 Plugin 'morhetz/gruvbox'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
